@@ -12,6 +12,6 @@ A simple Instagram-style user interface built with Flutter, showcasing scrollabl
 - Add feed posts below the story section
 - Implement story click interactions
 - Enhance UI with animations and gradients
-- 
+  
  
 
