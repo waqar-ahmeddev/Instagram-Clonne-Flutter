@@ -7,6 +7,17 @@ class SCreen extends StatefulWidget {
 }
 
 class _SCreenState extends State<SCreen> {
+  List<String> profileImage = [
+      "images/post_1.png",
+     "images/post_2.png",
+     "images/post_3.png",
+     "images/post_4.png",
+     "images/post_5.png",
+     "images/post_6.png",
+     "images/post_7.png",
+    " images/post_8.png",
+     "images/post_9.png",
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -31,6 +42,43 @@ class _SCreenState extends State<SCreen> {
         
         ],
        ),
+       body: SingleChildScrollView(
+        child: Column(
+          children: [
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Row(
+                children: List.generate(7, (index) => Container(
+                  padding: EdgeInsets.all(10),
+                  child: Column(
+                    children: [
+                      CircleAvatar(
+                        radius: 46,
+                        backgroundImage:AssetImage("images/instaPP.png"),
+                        child: CircleAvatar(
+                          radius: 31,
+                           backgroundImage:AssetImage(profileImage[index]),
+                        ),
+                      ),
+                      SizedBox(height: 10,),
+                       Text("Profile picture",style: TextStyle(fontSize: 12,color: Colors.black87),)
+                    ],
+                  ),
+                ),
+
+                ),
+              ),
+              
+            )
+
+          ],
+
+        ),
+
+       ),
+
     );
+
   }
+
 }
