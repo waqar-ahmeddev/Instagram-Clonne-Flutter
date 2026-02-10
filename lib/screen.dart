@@ -18,6 +18,18 @@ class _SCreenState extends State<SCreen> {
     " images/post_8.png",
      "images/post_9.png",
   ];
+     List<String> profilePost = [
+     "images/post_3.png",
+     "images/post_9.png",
+     "images/post_6.png",
+     "images/post_1.png",
+     "images/post_8.png",
+     "images/post_2.png",
+     "images/post_4.png",
+     "images/post_5.png",
+     "images/post_7.png",
+  ];
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -65,12 +77,75 @@ class _SCreenState extends State<SCreen> {
                     ],
                   ),
                 ),
-
                 ),
-              ),
-              
-            )
+              ),            
+            ),
+                Divider(),
+                Column(children: List.generate(7, (index) => Column(children: [
+                  Row(children: [
+                    Container(
+                      padding: EdgeInsets.all(10),
+                      child: CircleAvatar(
+                        radius: 14,
+                        backgroundImage:AssetImage("images/instaPP.png"),
+                        child: CircleAvatar(
+                          radius: 12,
+                           backgroundImage:AssetImage(profileImage[index]),               
+                           ),
+                        ), 
+                      ),
+                        Text("Profile Name"),
+                        Spacer(),
+                        IconButton(
+                          onPressed: (){
 
+                          }, 
+                          icon: Icon(Icons.more_vert)
+                          ),
+                  ],
+                ),
+                 Image.asset(
+                   profilePost[index],
+                    width: double.infinity,
+                     height: 300,
+                      fit: BoxFit.cover,
+                  ),
+                  Row(
+                    children: [
+                    IconButton(onPressed: (){
+
+                    },
+                     icon: Icon(Icons.favorite_border)
+                     ),
+
+                      IconButton(onPressed: (){
+
+                    },
+                     icon: Icon(Icons.chat_bubble_outline)
+                     ),
+
+                      IconButton(onPressed: (){
+
+                    },
+
+                     icon: Icon(Icons.label_outline)
+                     ),
+
+                   Spacer(),
+
+                   IconButton(onPressed: (){
+
+                    },
+                     icon: Icon(Icons.bookmark_border)
+                     ),
+                     
+                  ],
+                  ),
+
+               ],
+              ),
+            ),
+          ),
           ],
 
         ),
