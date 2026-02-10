@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-class SCreen extends StatefulWidget {
-  const SCreen({super.key});
+class Screen extends StatefulWidget {
+  const Screen({super.key});
 
   @override
-  State<SCreen> createState() => _SCreenState();
+  State<Screen> createState() => _SCreenState();
 }
 
-class _SCreenState extends State<SCreen> {
+class _SCreenState extends State<Screen> {
   List<String> profileImage = [
       "images/post_1.png",
      "images/post_2.png",
