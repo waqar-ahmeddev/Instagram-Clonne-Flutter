@@ -1,7 +1,7 @@
 # Instagram UI Clone (Flutter)
 A simple Instagram-style user interface built with Flutter, showcasing scrollable stories and a custom AppBar. This project demonstrates how to use SingleChildScrollView, Row, and CircleAvatar widgets to replicate Instagram’s story layout.
 # Preview 
- Coming soon... (Video/GIF demo will be added here once project is complete)
+https://github.com/user-attachments/assets/bd0c3a02-baf4-4143-924b-f0095843c623
 # Features
 - Custom AppBar with Instagram logo and action icons
 - Horizontal scrollable stories using SingleChildScrollView
